@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth ">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../dist/output.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Heebo:wght@200;300;400&family=Noto+Sans:wght@300&family=Open+Sans:wght@600&display=swap');
+        *{
+            /* font-family: 'Bebas Neue', cursive;
+            font-family: 'Heebo', sans-serif;
+            font-family: 'Noto Sans', sans-serif; */
+            font-family: 'Open Sans', sans-serif;
+        }
+        .hoverEffectImg{
+            transition: 0.3s ease-in-out;
+        }
+        .hoverEffect:hover .hoverEffectImg{
+            transform: scale(1.1);
+        }
+        .one.active{ 
+            transform-origin: left!important;
+            transform: rotate(40deg)!important;
+
+        }
+        .two.active{
+            transform: translateX(-30px)!important;
+            opacity: 0!important;
+        }
+        .three.active{ 
+            transform-origin: left!important;
+            transform: rotate(-40deg) !important;
+
+        }
+        .navDisplay.active{
+            display: block !important;
+        }
+      </style>
+</head>
+<body class="bg-slate-900">
+    <header  class="fixed top-0 left-0 w-full z-50 max-w-[1960px] mx-auto flex justify-between items-center px-6 md:px-10 py-3 md:bg-black/30 bg-gradient-to-r from-black to-[#382669] backdrop-blur-md border-b-2 md:border-b-0 border-slate-700 shadow-xl">
+        <div class="">
+            <a href="../index.html">
+                <i class="fas fa-2x text-violet-400 fa-gamepad "></i>
+            </a>
+        </div>
+        <nav class="hidden md:block">
+            <ul class="flex items-center gap-x-20 text-md">
+                <li class="text-slate-200">
+                    <a href="../index.html">
+                        Home
+                    </a>
+                </li>
+                <li class="text-slate-200">
+                    <a href="./pricing.html">
+                        Pricing
+                    </a>
+                </li>
+                <li class="text-slate-200">
+                    <a href="./update.html">
+                        Updates
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="">
+            <a href="./signUp.html" class="text-white text-md md:text-lg border bg-black/10 backdrop-blur-md border-blue-700/50 md:px-5 px-3 py-1 md:py-2 rounded-3xl rounded-br-none ">Sign Up</a>
+        </div>
+        <div class="md:hidden">
+            <div class="relative w-8 h-6 navIcon  flex items-center cursor-pointer">
+                <div class="absolute w-8 h-1 duration-500 top-0 bg-slate-100 rounded-full one "></div>
+                <div class="absolute w-8 h-1 duration-500 bg-slate-100 rounded-full two"></div>
+                <div class="absolute w-8 h-1 duration-500 bottom-0 bg-slate-100 rounded-full three"></div>
+            </div>
+        </div>
+    </header>
+
+    <div class=" md:hidden ">
+        <nav class="navDisplay z-30 fixed w-full mt-[60px] hidden p-8  md:block  backdrop-blur-lg bg-black/20">
+            <ul class="flex  flex-col gap-y-2 text-md">
+                <li class="text-slate-200 ">
+                    <a href="../index.html">
+                        Home
+                    </a>
+                </li>
+                <li class="text-slate-200 ">
+                    <a href="./pricing.html">
+                        Pricing
+                    </a>
+                </li>
+                <li class="text-slate-200 ">
+                    <a href="./update.html">
+                        Updates
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    
+    <main id="home" class=" max-w-[1960px] mx-auto " >
+        <!--Hero-->
+        <section class="px-6 bg-[url('https://framerusercontent.com/images/dsyEizBsa5B5a9H72HIuc8DM9C0.jpg?scale-down-to=2048')] bg-center">
+            <article class="max-w-7xl mx-auto py-32">
+                <div class="text-center headline">
+                    <h3 class="text-slate-100 text-4xl">
+                        Ready to start?
+                    </h3>
+                    <p class="text-slate-300 mt-5 text-center text-xl max-w-md mx-auto">
+                        Launch a site for free.Choose a site plan to unlock more features.
+                    </p>
+                </div>
+                <div class="md:grid md:grid-cols-1 md:gap-y-8 lg:gap-y-0 lg:flex items-center justify-center gap-x-10 mt-12">
+                    <div class="py-5 md:py-8 px-10 md:px-24 text-center backdrop-blur-xl bg-white/60 rounded-3xl overflow-hidden shadow-2xl max-w-[550px] mx-auto lg:max-w-auto lg:mx-0 headline">
+                        <i class="fas fa-2x fa-pencil"></i>
+                        <h2 class="mt-3">FREE PLAN</h2>
+                        <h1 class="text-4xl md:text-5xl mt-4">
+                            $15/mo
+                        </h1>
+                        <button class=" text-slate-800 rounded-full text-sm backdrop-blur-2xl p-1 px-2 mt-4">
+                            Up to 3 projects
+                            <i class="fas fa-info border py-1 ml-2 px-2 rounded-full border-slate-700"></i>
+                        </button>
+                        <div class="flex justify-center items-center gap-x-5 mt-8">
+                            <ul class="text-lg flex flex-col space-y-2">
+                                <li><i class="fa-solid fa-globe"></i></li>
+                                <li><i class="fa-solid fa-lock"></i></li>
+                                <li><i class="fa-solid fa-book"></i></li>
+                                <li><i class="fa-solid fa-layer-group"></i></li>
+                                <li><i class="fa-solid fa-person"></i></li>
+                            </ul>
+                            <ul class="text-start text-lg flex flex-col space-y-2">
+                                <li>Custom domain</li>
+                                <li>Password project</li>
+                                <li>10GB bandwidth</li>
+                                <li>1,000 CMS items</li>
+                                <li>10,000 visitors</li>
+                            </ul>
+                        </div>
+                        <button class="text-white text-lg px-6 md:px-8 py-2 rounded-3xl rounded-br-none bg-black mt-8">
+                            <i class="fas fa-pencil text-white mr-2"></i>
+                            TRY FOR FREE
+                        </button>
+                    </div>
+
+                    <div class="py-5  md:py-8 mt-10 md:mt-0 px-10 md:px-24 text-center backdrop-blur-xl rounded-3xl overflow-hidden shadow-2xl max-w-[550px] mx-auto lg:max-w-auto lg:mx-0 headline">
+                        <h1 class="text-center text-white text-3xl">
+                            <i class="fa-solid fa-bullseye"></i> Popular
+                        </h1>
+                        <i class="mt-5 fas fa-2x text-white fa-o"></i>
+                        <h2 class="mt-3 text-slate-200">FREE PLAN</h2>
+                        <h1 class="text-4xl md:text-5xl text-white mt-4">
+                            $30/mo
+                        </h1>
+                        <button class="border border-slate-400 text-slate-100 rounded-full text-sm backdrop-blur-2xl p-1 px-2 mt-4">
+                            Billed yearly
+                            <i class="fas fa-mobile-button border py-1 ml-2 px-2 rounded-full border-slate-700"></i>
+                        </button>
+                        <div class="flex justify-center items-center gap-x-5 mt-8">
+                            <ul class="text-white text-lg flex flex-col space-y-2">
+                                <li><i class="fa-solid fa-globe"></i></li>
+                                <li><i class="fa-solid fa-lock"></i></li>
+                                <li><i class="fa-solid fa-book"></i></li>
+                                <li><i class="fa-solid fa-layer-group"></i></li>
+                                <li><i class="fa-solid fa-person"></i></li>
+                            </ul>
+                            <ul class="text-white text-start text-lg flex flex-col space-y-2">
+                                <li>Custom domain</li>
+                                <li>Password project</li>
+                                <li>10GB bandwidth</li>
+                                <li>1,000 CMS items</li>
+                                <li>10,000 visitors</li>
+                            </ul>
+                        </div>
+                        <button class=" border border-slate-400 text-lg px-6 md:px-8 py-2 rounded-3xl rounded-br-none backdrop-blur-2xl mt-8 bg-white/90">
+                            <i class="fas fa-pencil text-black mr-2 "></i>
+                            Subscribe
+                        </button>
+                    </div>
+
+                    <div class="py-5  md:py-8 mt-10 md:mt-0 px-10 md:px-24 text-center backdrop-blur-xl bg-black rounded-3xl overflow-hidden shadow-2xl max-w-[550px] mx-auto lg:max-w-auto lg:mx-0 headline">
+                        <i class="fas fa-2x fa-dollar text-white"></i>
+                        <h2 class="mt-3 text-slate-100">PRO PLAN</h2>
+                        <h1 class="text-4xl md:text-5xl mt-4 text-white">
+                            $45/mo
+                        </h1>
+                        <button class=" text-slate-100 rounded-full text-sm backdrop-blur-2xl p-1 px-2 mt-4">
+                            Up to 3 projects
+                            <i class="fas fa-info border py-1 ml-2 px-2 rounded-full border-slate-700"></i>
+                        </button>
+                        <div class="flex justify-center items-center gap-x-5 mt-8">
+                            <ul class="text-white text-lg flex flex-col space-y-2">
+                                <li><i class="fa-solid fa-globe"></i></li>
+                                <li><i class="fa-solid fa-lock"></i></li>
+                                <li><i class="fa-solid fa-book"></i></li>
+                                <li><i class="fa-solid fa-layer-group"></i></li>
+                                <li><i class="fa-solid fa-person"></i></li>
+                            </ul>
+                            <ul class="text-white text-start text-lg flex flex-col space-y-2">
+                                <li>Custom domain</li>
+                                <li>Password project</li>
+                                <li>10GB bandwidth</li>
+                                <li>1,000 CMS items</li>
+                                <li>10,000 visitors</li>
+                            </ul>
+                        </div>
+                        <button class="text-white text-lg px-6 md:px-8 py-2 rounded-3xl rounded-br-none bg-slate-800 mt-8">
+                            <i class="fas fa-pencil text-white mr-2 "></i>
+                            Subscribe
+                        </button>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <!-- rating -->
+        <section class="px-6 bg-[url('https://framerusercontent.com/images/dsyEizBsa5B5a9H72HIuc8DM9C0.jpg?scale-down-to=2048')]">
+            <article class="py-32">
+                <div class="max-w-4xl mx-auto headline">
+                    <h2 class="text-center text-white text-4xl md:text-5xl max-w-xl mx-auto">
+                        How students learned from our courses
+                    </h2>
+                    <h3 class="text-center text-white text-sm mt-6 max-w-xl mx-auto">
+                        See what people have learned and built by taking courses from Design+Code.
+                    </h3>
+                </div>
+                <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-8 mt-14">
+                    <div class="rounded-3xl border border-slate-300/50 p-8 text-white backdrop-blur-xl headline">
+                        <div class="w-12 h-12 overflow-hidden rounded-full shadow-2xl">
+                            <img src="https://framerusercontent.com/images/G4EHvzBzhyGKDKrDZSUvoY9U.jpg?scale-down-to=4096" alt="">
+                        </div>
+                        <h3 class="text-xl mt-4">Rachel Nelson</h3>
+                        <h4 class="text-lg mt-4">
+                            MOBILE DEVELOPER
+                        </h4>
+                        <p class="text-sm mt-4">
+                            Your first book was extremely helpful for me because, like yourself, I also started off as a pixel-pusher and I liked to make things look pretty without thinking too much of how design really functions. Your book has really helped me to fine-tune my skills in design!
+                        </p>
+                    </div>
+                    <div class="rounded-3xl border border-slate-300/50 p-8 text-white backdrop-blur-xl headline">
+                        <div class="w-12 h-12 overflow-hidden rounded-full shadow-2xl">
+                            <img src="https://framerusercontent.com/images/8BdwnceAirtuZGkTJiMMWWCX4.jpg" alt="">
+                        </div>
+                        <h3 class="text-xl mt-4">Fabio Sasso</h3>
+                        <h4 class="text-lg mt-4">
+                            FOUNDER OF ABDZ
+                        </h4>
+                        My first iOS app is available on the AppStore. I literally didn’t know anything about SwiftUI (still not much) and in probably 4 weeks was able to recreate my android app for iOS. Highly recommend MengTo videos!  <p class="text-sm mt-4">
+                            
+                        </p>
+                    </div>
+                    <div class="rounded-3xl border border-slate-300/50 p-8 text-white backdrop-blur-xl headline">
+                        <div class="w-12 h-12 overflow-hidden rounded-full shadow-2xl">
+                            <img src="https://framerusercontent.com/images/f2LRSaaYtxuWH5kTaAQW5SZOU4.jpg" alt="">
+                        </div>
+                        <h3 class="text-xl mt-4">Kenny Chen</h3>
+                        <h4 class="text-lg mt-4">
+                            UX DESIGNER AT GOOGLE
+                        </h4>
+                        <p class="text-sm mt-4">
+                            I found and bought Design+Code by Meng To which takes you through each step of the process from design to code to app store submission.
+                        </p>
+                    </div>
+                    <div class="rounded-3xl border border-slate-300/50 p-8 text-white backdrop-blur-xl headline">
+                        <div class="w-12 h-12 overflow-hidden rounded-full shadow-2xl">
+                            <img src="https://framerusercontent.com/images/nd40syHkY2jkIkZR3XaDPOBVGtk.jpg?scale-down-to=4096" alt="">
+                        </div>
+                        <h3 class="text-xl mt-4">Pablo Stanley</h3>
+                        <h4 class="text-lg mt-4">
+                            DESIGNER AT BLUSH
+                        </h4>
+                        <p class="text-sm mt-4">
+                            Meng To's book totally changed my design workflow. It even inspired me to start design workshops and YouTube tutorials.
+                        </p>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+
+    </main>
+
+
+    <!-- footer -->
+    <footer class="px-6 bg-gradient-to-b from-[#070818] to-slate-900 max-w-[1960px] mx-auto ">
+        <section class="max-w-4xl mx-auto py-24 grid lg:grid-cols-2 ">
+            <article class="grid grid-cols-2 ">
+                <div class="flex items-center justify-center lg:justify-start gap-x-2  headline">
+                    <ul class="text-slate-200 flex flex-col gap-y-4 text-xl">
+                        <li><i class="fas fa-layer-group"></i></li>
+                        <li><i class="fas fa-check-circle"></i></li>
+                        <li><i class="fas fa-file"></i></li>
+                    </ul>
+                    <ul class="text-slate-300 flex flex-col gap-y-4 text-md md:text-lg">
+                        <li>COMPONENTS</li>
+                        <li>PRICING</li>
+                        <li>UPDATES</li>
+                    </ul>
+                </div>
+
+                <div class="flex items-center justify-center lg:justify-start gap-x-2  headline">
+                    <ul class="text-slate-200 flex flex-col gap-y-4 text-xl">
+                        <li><i class="fas fa-layer-group"></i></li>
+                        <li><i class="fas fa-check-circle"></i></li>
+                        <li><i class="fas fa-file"></i></li>
+                    </ul>
+                    <ul class="text-slate-300 flex flex-col gap-y-4 text-md md:text-lg">
+                        <li>COMPONENTS</li>
+                        <li>PRICING</li>
+                        <li>UPDATES</li>
+                    </ul>
+                </div>
+            </article>
+            <article class="md:px-5 mt-12 lg:mt-0 headline">
+                <div class="border border-slate-600 rounded-3xl p-5 md:p-7 flex justify-center">
+                    <div class="">
+                        <h3 class="text-slate-100 font-bold text-lg text-center md:text-start">SUBSCRIBE TO OUR NEWSLETTER</h3>
+                        <div class="md:flex items-center gap-x-4 mt-3 w-full">
+                            <input type="email" class="bg-slate-200 p-2 rounded-xl w-full md:w-auto" placeholder="Enter Your Email..">
+                            <div class="flex justify-center mt-4 md:mt-0 w-full md:block">
+                                <button class="text-white  bg-red-500 px-5 py-2  font-bold rounded-xl">Sign Up</button>
+                            </div>
+                            
+                        </div>
+                        <p class="text-slate-300 mt-5 text-sm text-center md:text-start headline">
+                            Product news and promotions. No spam ever. 
+                        </p>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <section>
+            <article class="pb-12">
+                <h3 class="text-slate-300 text-center headline">
+                    Copyright © 2022 Framer Site
+                </h3>
+            </article>
+        </section>
+    </footer>
+
+    <a href="#home">
+        <div class="upIcon z-20 text-white fixed flex justify-center items-center bottom-5 right-5 w-10 h-10 bg-gradient-to-b from-black to-[#382669] rounded-md">
+            <i class="fas fa-angle-up "></i>
+        </div>   
+    </a>
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.min.js" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.2/jquery.min.js" integrity="sha512-tWHlutFnuG0C6nQRlpvrEhE4QpkG1nn2MOUMWmUeRePl4e3Aki0VB6W1v3oLjFtd0hVOtRQ9PHpSfN6u6/QXkQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="./app.js"></script>
+</html>
